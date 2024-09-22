@@ -20,3 +20,13 @@ document.getElementById('clear-list').addEventListener('click', function(){
 });
 
 
+document.getElementById('todo-list').addEventListener('click', (event) => {
+    if (event.target.tagName === 'LI') {
+        event.target.classList.toggle('completed');
+    }
+});
+
+
+
+
+
